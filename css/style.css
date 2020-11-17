@@ -757,6 +757,7 @@ button {
 h1 {
     text-align: center;
     /* margin-right: 220px;*/
+    padding: 20px;
 }
 
 
@@ -844,4 +845,35 @@ h1 {
 
 .section3 li {
     list-style-type: none;
+}
+
+
+.wp-block-buttons {
+    font-size: 60px;
+    padding: 60px;
+    box-sizing: 100px;
+    text-align: center;
+}
+
+#hoejskole .text {
+    text-align: center;
+}
+
+#hoejskole p,
+li {
+    padding: 10px;
+}
+
+/********* DIN ØKONOMI ********/
+
+#splashoekonomi img {
+    width: 100vw;
+    max-height: 80vh;
+    object-fit: cover;
+    object-position: 0 10%;
+}
+
+
+#dinoekonomi .text {
+    text-align: center;
 }
