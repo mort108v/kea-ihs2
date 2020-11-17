@@ -127,14 +127,16 @@
     </header>
 
     <section id="splash">
-        <div class="splash_media"></div>
+        <img src="assets/splash/jubel_ihs.jpg" alt="jubel">
     </section>
 
     <section id="breadcrum"> </section>
 
     <h1></h1>
-    <section>
+    <section id="tilmeld">
         <h2 class="h2"></h2>
+        <h3 class="h3"></h3>
+        <h4 class="h4"></h4>
         <p class="text"></p>
         <img src="" alt="">
     </section>
@@ -157,9 +159,9 @@
             thePage = await jsonData.json();
             console.log(thePage);
             document.querySelector("h1").textContent = thePage.title.rendered;
-            document.querySelector("h2").textContent = thePage.title.rendered;
+//            document.querySelector("h2").textContent = thePage.title.rendered;
             document.querySelector(".text").innerHTML = thePage.content.rendered;
-            document.querySelector("img").src = thePage.billede.guid;
+//            document.querySelector("img").src = thePage.billede.guid;
         }
 
     </script>
