@@ -19,12 +19,6 @@
             <div class="logo">
                 <a href="index.html"><img src="assets/logo/ihs_logo.webp" class="logo" alt="logo"></a>
             </div>
-            <!-- <div class="search hide">
-                <div>
-                    <img class="search-icon" src="assets/icons/search.png" alt="search">
-                </div>
-                <input type="text" id="search-field" name="search" class="hide">
-            </div>-->
             <ul class="nav-links">
                 <li>
                     <a class="cta" href="tilmelding.html"><button>Tilmelding</button></a>
@@ -139,7 +133,7 @@
 
         <div class="main-form">
             <div class="container">
-                <form roll="form" action="kontaktform.php" method="POST">
+                <form action="http://nobisnet.dk/cgi-bin/FormMail.pl" method="POST" accept-charset="ISO-8859-1" onsubmit="var originalCharset = document.charset; document.charset = 'ISO-8859-1'; window.onbeforeunload = function () {document.charset=originalCharset;};">
 
                     <label for="name">* Dit fulde navn</label>
                     <input type="text" id="name" name="name" placeholder="Dit navn her...">
@@ -157,10 +151,13 @@
                     </select>
 
                     <label for="message">* Besked</label>
-                    <textarea id="message" name="message" placeholder="Skriv noget fedt her..." style="height:200px"></textarea>
+                    <textarea id="message" name="message" placeholder="Skriv noget fedt her..." style="height:180px"></textarea>
 
                     <input type="submit" value="Afsend">
                     <input type="reset" value="Slet indhold">
+
+                    <input type="hidden" name="recipient" value="morten@nobisnet.dk" />
+
                 </form>
             </div>
         </div>
