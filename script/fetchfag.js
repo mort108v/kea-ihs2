@@ -7,7 +7,7 @@ let filter = "alle-fag";
 let listPointer = document.querySelector("#container");
 
 let buttonActive = document.querySelector("button.filter.active");
-
+console.log(buttonActive);
 
 document.addEventListener("DOMContentLoaded", hentdata);
 
@@ -38,9 +38,6 @@ function show() {
             klon.querySelector(".indhold").addEventListener("click", function () {
                 fagClick(fag.id)
             });
-            /*
-                        klon.querySelector("#beskrivelse-kort").innerHTML = fag.kort;
-            */
 
             listPointer.appendChild(klon);
         }
@@ -69,7 +66,7 @@ function filterBTNs() {
 
     buttonActive = document.querySelector("button.filter.active");
 
-    show();
+    show(json);
 }
 
 hentdata();
