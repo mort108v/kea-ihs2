@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="dk">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sønderborg Idrætshøjskole</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Quicksand:wght@500&display=swap" rel="style">
+
+    <script src="components/footer.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="assets/logo/ihs_logo.webp" class="logo" alt="logo"></a>
+            </div>
+            <!-- <div class="search hide">
+                <div>
+                    <img class="search-icon" src="assets/icons/search.png" alt="search">
+                </div>
+                <input type="text" id="search-field" name="search" class="hide">
+            </div>-->
+            <ul class="nav-links">
+                <li>
+                    <a class="cta" href="tilmelding.html"><button>Tilmelding</button></a>
+                </li>
+                <div class="hoejskole">
+                    <li>
+                        <a href="hoejskole.html">Højskole</a>
+                    </li>
+                    <div class="hoejskole-drop">
+                        <li>
+                            <a href="hoejskole.html">Om højskolen</a>
+                        </li>
+                        <li>
+                            <a href="fag.html">Fag og Sport</a>
+                        </li>
+                        <li>
+                            <a href="rejser.html">Rejser</a>
+                        </li>
+                        <li>
+                            <a href="oekonomi.html">Din økonomi</a>
+                        </li>
+                    </div>
+                </div>
+                <div class="korte-kurser">
+                    <li>
+                        <a href="ugekurser.html">Korte kurser</a>
+                    </li>
+                    <div class="korte-drop">
+                        <li>
+                            <a href="ugekurser.html">Ugekurser</a>
+                        </li>
+                        <li>
+                            <a href="gymnasier.html">For gymnasier</a>
+                        </li>
+                        <li>
+                            <a href="teambuilding.html">Teambuilding på arbejdspladsen</a>
+                        </li>
+                        <li>
+                            <a href="udlejning.html">Lokaleudlejning</a>
+                        </li>
+                    </div>
+                </div>
+                <div class="om-ihs">
+                    <li>
+                        <a href="ihs_livet.html">Om IHS</a>
+                    </li>
+                    <div class="om-ihs-drop">
+                        <li>
+                            <a href="ihs_livet.html">Livet på IHS</a>
+                        </li>
+                        <li>
+                            <a href="personale.html">Personale</a>
+                        </li>
+                        <li>
+                            <a href="bestyrelse.html">Bestyrelse</a>
+                        </li>
+                        <li>
+                            <a href="værdier.html">Værdier</a>
+                        </li>
+                        <li>
+                            <a href="elevforening.html">Elevforening</a>
+                        </li>
+                        <li>
+                            <a href="faciliteter .html">Faciliteter</a>
+                        </li>
+                        <li>
+                            <a href="faq.html">FAQ</a>
+                        </li>
+                    </div>
+                </div>
+                <div class="kontakt">
+                    <li>
+                        <a href="kontakthtm.php">Kontakt</a>
+                    </li>
+                    <div class="kontakt-drop">
+                        <li>
+                            <a href="kontakthtm.php">Kontakt os</a>
+                        </li>
+                        <li>
+                            <a href="find_os.html">Find os</a>
+                        </li>
+                        <li>
+                            <a href="rundvisning.html">Book en rundvisning</a>
+                        </li>
+                    </div>
+                </div>
+                <div id="lang">
+                    <div class="langUK">
+                        <img class="langUKimg" src="assets/icons/united-kingdom-flag-transparent.png" alt="language UK">
+                    </div>
+                    <div class="langDK">
+                        <img class="langDKimg" src="assets/icons/flag-denmark-2.png" alt="language DK">
+                    </div>
+                </div>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="splash_web">
+        <img src="assets/splash/giammarco-boscaro-zeH-ljawHtg-unsplash-1024x683.jpg">
+    </section>
+    <section id="mid-menu">
+        <div class="fag-sport-buttons">
+            <button id="alle-fag" class="filter active" data-fag="alle-fag">Alle fag</button>
+            <button id="idraetsfag" class="filter" data-fag="6">Idrætsfag</button>
+            <button id="faellesfag" class="filter" data-fag="9">Fællesfag</button>
+            <button id="tilbudsfag" class="filter" data-fag="10">Tilbudsfag</button>
+            <button id="almene-fag" class="filter" data-fag="7">Almene fag</button>
+            <button id="specialefag" class="filter" data-fag="5">Specialefag</button>
+            <button id="interessefag" class="filter" data-fag="8">Interessefag</button>
+        </div>
+    </section>
+    <section id="breadcrum"> </section>
+
+    <section id="fag-main">
+        <h1></h1>
+        <div id="container"></div>
+    </section>
+
+    <section id="liste">
+    </section>
+
+    <template>
+        <article class="indhold">
+            <h3 class="navn"></h3>
+            <!--<p id="beskrivelse-kort"></p>-->
+            <img src="" alt="" class="billede-kort">
+        </article>
+    </template>
+
+    <footer-component></footer-component>
+
+    <script src="/script/javascript.js"></script>
+    <script src="/script/fetchfag.js"></script>
+</body></html>
