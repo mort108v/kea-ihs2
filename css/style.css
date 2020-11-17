@@ -1,0 +1,847 @@
+/*-------- MAIN ----------*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    background-color: rgb(226, 226, 226);
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*-------- Fonts ----------*/
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    color: #000;
+    font-size: 56px;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #000;
+    font-size: 24px;
+}
+
+p {
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*-------- BUTTON STUFF ----------*/
+
+/*button.filter {
+    background-color: transparent;
+    border: 0;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+}
+
+button:active {
+    outline: none;
+    border: none;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.button {
+    text-decoration: none;
+    color: #3633A2;
+    background-color: #fff;
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: #3633A2;
+    border-color: #3633A2;
+}
+
+.button-invert {
+    background-color: transparent;
+    color: #fff;
+}
+
+.button-invert:hover {
+    background-color: #fff;
+    border-color: #fff;
+    color: #3633A2;
+}
+
+.topmenu_buttons {
+    display: none;
+}
+
+.topmenu_buttons button:first-child {
+    margin-right: 15px;
+}*/
+
+/*-------- FONT COLORS ----------*/
+
+.white-text {
+    color: #fff;
+}
+
+.black-text {
+    color: #202124;
+}
+
+.purple-text {
+    color: #3633A2;
+}
+
+/*-------- ARTICLE ----------*/
+
+article {
+    border: solid #0088a9 2px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+article:hover {
+    background-color: #0088a9;
+}
+
+article:hover h3 {
+    color: white;
+}
+
+article img {
+    max-width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+article h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    color: #0088a9;
+    font-size: 18px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#container {
+    padding: 0px;
+    width: 95vw;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 15px;
+    align-items: top;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+}
+
+#fag-main h1 {
+    text-align: center;
+}
+
+/*-------- SPLASH ----------*/
+
+#splash_index {
+    width: 100vw;
+    max-height: 80vh;
+    object-fit: contain;
+    display: none;
+}
+
+
+#splash {
+    width: 100vw;
+    max-height: 80vh;
+    object-fit: contain;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /*background: rgba(0, 0, 0, 0.4);*/
+    background-image: linear-gradient(90deg, rgba(0, 200, 0, .20), rgba(0, 0, 0, .50));
+    color: white;
+    margin-bottom: 100px;
+    position: relative;
+    min-height: 80vh;
+    overflow: hidden;
+}
+
+.video-bg {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+.hero h1 {
+    font-family: 'Lato', sans-serif;
+    color: ghostwhite;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    font-size: 90px;
+}
+
+
+@media screen and (max-width:1100px) {
+
+    .hero h1 {
+        font-family: 'Lato', sans-serif;
+        color: rgb(226, 226, 226);
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        font-size: 50px;
+    }
+}
+
+
+
+/*-------- * ----------*/
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+#fag-main {
+    margin-top: 7vh;
+}
+
+#main {
+    margin-top: 7vh;
+}
+
+/*-------- NAVIGATION ----------*/
+
+.logo {
+    flex-basis: 120px;
+    object-fit: contain;
+    padding: 4px;
+    cursor: pointer;
+}
+
+
+.langDKimg,
+.langUKimg {
+    height: 32px;
+    max-width: 32px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+/*.search-icon {
+    width: 40px;
+    padding: 4px ;
+    cursor: pointer;
+    opacity: .5;
+}
+
+.search-icon:hover {
+    display: inline-flex;
+    opacity: .8;
+}
+
+.search:hover #search-field{
+    display: flex;
+    position: absolute;
+}*/
+
+.a {
+    object-fit: contain;
+}
+
+nav {
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .45);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding-left: 5%;
+    padding-right: 4%;
+    z-index: 1;
+}
+
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+    align-items: center;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    transition: all 0.3s ease 0s;
+    color: whitesmoke;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #0088a9;
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+    padding: 12px 18px;
+    border: solid 2px;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    color: rgba(0, 136, 165, 1);
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 1;
+}
+
+.cta button {
+    background-color: rgba(0, 136, 165, 1);
+    color: white;
+    opacity: none;
+}
+
+.fag-sport-buttons .active {
+    cursor: pointer;
+    padding: 12px 18px;
+    background-color: rgba(0, 136, 165, 1);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav-links button:hover {
+    background-color: rgba(0, 136, 165, 0.7);
+    opacity: .8;
+}
+
+/*-------- FAG BUTTONS ----------*/
+
+.fag-sport-buttons {
+    display: block;
+    position: absolute;
+    margin: 5px;
+    top: 10vh;
+    right: 0;
+    left: 5vw;
+}
+
+.fag-sport-buttons button {
+    display: flex;
+    margin: 10px;
+    opacity: 1;
+}
+
+.fag-sport-buttons button:hover {
+    margin-right: 10px;
+    opacity: .8;
+}
+
+/*-------- navigation drops ----------*/
+
+.hoejskole-drop,
+.korte-drop,
+.om-ihs-drop,
+.kontakt-drop {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .45);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    padding-top: 5vh;
+    padding-left: 25px;
+    padding-right: 10px;
+    line-height: 35px;
+}
+
+.nav-links .hoejskole:hover .hoejskole-drop {
+    display: block;
+}
+
+.nav-links .korte-kurser:hover .korte-drop {
+    display: block;
+}
+
+.nav-links .om-ihs:hover .om-ihs-drop {
+    display: block;
+}
+
+.nav-links .kontakt:hover .kontakt-drop {
+    display: block;
+}
+
+/*-------- navigation mobile-view ----------*/
+
+.burger {
+    display: none;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.burger div {
+    width: 23px;
+    height: 2px;
+    background-color: #089296;
+    margin: 5px 5px;
+    transition: all 0.5s ease;
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+
+@media screen and (max-width:1700px) {
+    .nav-links {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:1630px) {
+    .nav-links {
+        width: 53%;
+    }
+}
+
+
+@media screen and (max-width:1500px) {
+    .nav-links {
+        width: 59%;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    .nav-links {
+        width: 65%;
+    }
+}
+
+
+@media screen and (max-width:1100px) {
+    .nav-links {
+        position: fixed;
+        right: 0px;
+        height: 94vh;
+        top: 6vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, .45);
+        font-size: 100px;
+    }
+
+    nav {
+        padding-left: 3%;
+        height: 6vh;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .nav-links li a {
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+
+    .nav-links li button {
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .logo {
+        height: 6vh;
+        margin-bottom: 6.5px;
+    }
+
+
+    .langDKimg,
+    .langUKimg {
+        height: 40px;
+        max-width: 40px;
+        cursor: pointer;
+        align-items: center;
+        margin-right: 15px;
+    }
+
+    main {
+        margin-top: 6vh;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+
+    @media screen and (max-width:750px) {
+        .hero {
+            display: none;
+        }
+
+        #splash_index {
+            display: block;
+        }
+
+
+    }
+}
+
+/*---------- FAG MEDIAQUERIES -----------*/
+
+@media screen and (min-width:700px) {
+
+    .fag-sport-buttons {
+        display: flex;
+        position: absolute;
+        margin: auto;
+        top: 48vh;
+        left: 18vw;
+    }
+
+    .fag-sport-buttons button {
+        display: flex;
+        margin: 10px;
+        opacity: 1;
+    }
+}
+
+/*-------- INDEX FORSIDE --------*/
+
+
+
+/*-------- FOOTER ----------*/
+.footer {
+    padding: 50px 0 40px 0;
+    background-color: #fff;
+}
+
+.footer-flex-container {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+
+.footer-headline {
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #000;
+    font-size: 24px;
+}
+
+.footer-left {
+    flex-grow: 1;
+    text-align: center;
+    align-content: center;
+}
+
+.footer-logo-container {
+    display: block;
+}
+
+.footer-mid {
+    flex-grow: 2;
+}
+
+.footer-mid img {
+    width: 50px;
+}
+
+.footer-some-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 50px 0 50px;
+}
+
+.footer-some-container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 50px 0 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-some-container li {
+    display: inline;
+}
+
+.footer-right {
+    flex-grow: 1;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 40px 20px 40px;
+}
+
+.footer-copy {
+    display: flex;
+    justify-content: center;
+}
+
+/*-------- Footer media query ----------*/
+@media screen and (max-width:700px) {
+    .footer-headline {
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+    .footer p {
+        font-size: 10px;
+    }
+
+    .footer-flex-container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .footer-mid {
+        margin: 15px 0 15px 0;
+    }
+
+    .footer-some-container {
+        padding: 0;
+    }
+
+    .footer-mid a img {
+        width: 40px;
+    }
+
+    .footer-bottom p {
+        font-size: 10px;
+        padding: 0 10px 20px 10px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .footer-headline {
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+    .footer p {
+        font-size: 10px;
+    }
+
+    .footer-flex-container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .footer-mid {
+        margin: 15px 0 15px 0;
+    }
+
+    .footer-some-container {
+        padding: 0;
+    }
+
+    .footer-mid img {
+        width: 40px;
+    }
+
+    .footer-bottom p {
+        font-size: 10px;
+        padding: 0 10px 20px 10px;
+    }
+}
+
+
+
+
+
+/******** HØJSKOLE SIDE *********/
+
+
+#splashhoejskole img {
+    width: 100vw;
+    max-height: 80vh;
+    object-fit: cover;
+    object-position: 0 10%;
+}
+
+h1 {
+    text-align: center;
+    /* margin-right: 220px;*/
+}
+
+
+
+
+.genereltsection .wp-block-group__inner-container {
+    box-sizing: border-box;
+    float: center;
+    border: 2px solid lightblue;
+    text-align: center;
+    padding: 50px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.genereltsection .wp-block-group__inner-container h2 {
+    margin-bottom: 20px;
+}
+
+.genereltsection .wp-block-group__inner-container ul {
+    list-style-type: none;
+}
+
+.section1 > .wp-block-group__inner-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*    grid-gap: 10px;*/
+    margin-left: 40px;
+}
+
+.section1 img {
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+
+.section2 > .wp-block-group__inner-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*    grid-gap: 10px;*/
+    /* margin-left: 40px;
+    margin-right: 40px;*/
+    padding: 40px;
+    margin-top: 50px;
+    box-sizing: border-box;
+    margin: 10px;
+
+    background-color: lightblue;
+}
+
+.section2 img {
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+
+.section3 {
+    box-sizing: border-box;
+    float: center;
+    border: 2px solid lightblue;
+    text-align: center;
+    padding: 50px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.section3 h2 {
+    margin-bottom: 20px;
+}
+
+.section3 .underoverskrift {
+    margin-top: 10px;
+}
+
+.section3 li {
+    list-style-type: none;
+}
