@@ -12,10 +12,10 @@ const link = "http://nobisnet.dk/kea/09_wordpress/ihs/wordpress-5.5.3/wordpress/
 async function hentdata() {
     const respons = await fetch(link);
     jsonPersonale = await respons.json();
-    show(jsonPersonale);
+    show();
 }
 
-function show(jsonPersonale) {
+function show() {
     console.log(listPointer)
 
     listPointer.innerHTML = "";
