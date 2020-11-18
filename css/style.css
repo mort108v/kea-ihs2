@@ -12,7 +12,8 @@
 body {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    background-color: rgb(226, 226, 226);
+    /*    background-color: rgb(226, 226, 226);*/
+    background-color: white;
     margin: 0;
 }
 
@@ -759,11 +760,13 @@ h1 {
 
 
 
+
+
 .genereltsection .wp-block-group__inner-container {
     box-sizing: border-box;
     float: center;
-    border: 2px solid lightblue;
-    text-align: center;
+    border: 10px solid #0396a6;
+    /*    text-align: center;*/
     padding: 50px;
 
     margin-top: 20px;
@@ -814,7 +817,7 @@ li {
     box-sizing: border-box;
     margin: 10px;
 
-    background-color: lightblue;
+    background-color: #0396a6;
 }
 
 .section2 img {
@@ -828,7 +831,7 @@ li {
 .section3 {
     box-sizing: border-box;
     float: center;
-    border: 2px solid lightblue;
+    border: 10px solid #0396a6;
     text-align: center;
     padding: 50px;
 
@@ -851,8 +854,8 @@ li {
 }
 
 
-.wp-block-buttons {
-    font-size: 60px;
+#hoejskole .wp-block-buttons {
+    font-size: 70px;
     padding: 60px;
     box-sizing: 100px;
     text-align: center;
@@ -878,7 +881,41 @@ li {
 
 
 #dinoekonomi .text {
-    text-align: center;
+    text-align: left;
+
+}
+
+#dinoekonomi p,
+h2 {
+    margin-left: 170px;
+    margin-right: 170px;
+    line-height: 20px;
+}
+
+#dinoekonomi p {
+    padding: 5px;
+}
+
+#dinoekonomi li,
+ul {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+#dinoekonomi li {
+    /*    list-style-type: none;*/
+}
+
+.oekonomi1 {
+    box-sizing: border-box;
+    border: 10px solid #0396a6;
+    padding: 50px;
+}
+
+.oekonomi2 {
+    box-sizing: border-box;
+    border: 10px solid #0396a6;
+    padding: 50px;
 }
 
 /******** TILMELD SIDE *********/
@@ -938,6 +975,48 @@ li {
 }
 
 .wp-block-buttons {
-    padding: 0;
+    padding: 20px;
     font-size: 30px;
+}
+
+
+/****** FOR GYMNASIER STYLE *******/
+
+#splashgymnasier img {
+    width: 100vw;
+    max-height: 80vh;
+    object-fit: cover;
+    object-position: 0 10%;
+}
+
+#gymnasier .text {
+    text-align: left;
+
+}
+
+#gymnasier p,
+h2 {
+    margin-left: 170px;
+    margin-right: 170px;
+    line-height: 20px;
+    padding: 10px;
+}
+
+.gymnasier1 {
+    box-sizing: border-box;
+    border: 10px solid #0396a6;
+    padding: 50px;
+}
+
+.gymnasier2 {
+    box-sizing: border-box;
+    border: 10px solid #0396a6;
+    padding: 50px;
+    margin-top: 20px;
+}
+
+.gymnasier3 {
+    box-sizing: border-box;
+    border: 10px solid #0396a6;
+    padding: 50px;
 }
