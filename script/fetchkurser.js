@@ -7,20 +7,20 @@ let filter = "alle-kurser";
 
 document.addEventListener("DOMContentLoaded", hentdata);
 
-const link = "http://nobisnet.dk/kea/09_wordpress/ihs/wordpress-5.5.3/wordpress/wp-json/wp/v2/uge_kursus";
+const link = "http://nobisnet.dk/kea/09_wordpress/ihs/wordpress-5.5.3/wordpress/wp-json/wp/v2/ugekurser/";
 
 async function hentdata() {
     const respons = await fetch(link);
     jsonKurser = await respons.json();
-    show();
+    show(jsonKurser);
 }
 
-function show() {
+function show(jsonKurser) {
     console.log(listPointer)
 
     listPointer.innerHTML = "";
 
-    //løb igennem array "fag"
+    //løb igennem array "kurser"
     jsonKurser.forEach(kurser => {
         if (filter == "alle-kurser" || filter == kurser.name[0]) {
             console.log(filter);

@@ -363,19 +363,9 @@ button {
 }
 
 .fag-sport-buttons .active {
-    cursor: pointer;
-    padding: 12px 18px;
     background-color: rgba(0, 136, 165, 1);
-    border: none;
-    border-radius: 50px;
-    transition: all 0.3s ease 0s;
     color: white;
-    text-decoration: none;
-    letter-spacing: 1.5px;
-    font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    opacity: none;
 }
 
 .nav-links button:hover {
@@ -389,9 +379,9 @@ button {
     display: block;
     position: absolute;
     margin: 5px;
-    top: 10vh;
+    top: 5vh;
     right: 0;
-    left: 5vw;
+    left: 4vw;
 }
 
 .fag-sport-buttons button {
@@ -592,14 +582,13 @@ button {
     .fag-sport-buttons {
         display: flex;
         position: absolute;
-        margin: auto;
-        top: 48vh;
-        left: 18vw;
-    }
+        margin: 0 auto;
+        top: 90vh;
+            }
 
     .fag-sport-buttons button {
         display: flex;
-        margin: 10px;
+        margin: 0px auto;
         opacity: 1;
     }
 }
