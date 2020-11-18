@@ -1062,3 +1062,47 @@ h2 {
     border: 10px solid #0396a6;
     padding: 50px;
 }
+
+#splashvaerdier img {
+    width: 100vw;
+    max-height: 80vh;
+    object-fit: cover;
+    object-position: 0 10%;
+}
+
+#vaerdier {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#vaerdier .wp-block-columns {
+
+    margin-top: 20px;
+    max-width: 95vw;
+    background-color: #B3D5A2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    /*    grid-template-columns: 1fr 1fr 1fr;
+    */
+
+    /*
+    padding: 0px;
+    width: 95vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    align-items: top;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+*/
+
+}
+
+#vaerdier .wp-block-column {
+    margin: 15px;
+}
+
+#vaerdier p,
+h2 {
+    margin-bottom: 15px;
+}
