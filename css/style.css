@@ -949,7 +949,7 @@ ul {
         margin: 0;
     }
 
-    #dinoekonomi h2,
+    #dinoekonomi > h2,
     p,
     li,
     ul {
@@ -1036,7 +1036,7 @@ ul {
 
 }
 
-#gymnasier p,
+#gymnasier > p,
 h2 {
     margin-left: 170px;
     margin-right: 170px;
