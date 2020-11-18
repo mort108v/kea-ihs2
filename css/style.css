@@ -185,7 +185,6 @@ article h3 {
 
 #fag-splash {
     width: 100vw;
-    max-height: 120vh;
     object-fit: contain;
     margin-top: 0vh;
     display: flex;
@@ -972,6 +971,6 @@ ul {
 }
 
 .wp-block-buttons {
-    padding: 0;
+    padding: 20px;
     font-size: 30px;
 }
