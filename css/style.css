@@ -584,7 +584,7 @@ button {
         position: absolute;
         margin: 0 auto;
         top: 90vh;
-            }
+    }
 
     .fag-sport-buttons button {
         display: flex;
@@ -786,7 +786,8 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     /*    grid-gap: 10px;*/
-    margin-left: 40px;
+    margin: 10px;
+    border: 10px solid #B9D8A9;
 }
 
 .section1 img {
@@ -808,7 +809,7 @@ h1 {
     box-sizing: border-box;
     margin: 10px;
 
-    background-color: #0396a6;
+    background-color: #B9D8A9;
 }
 
 .section2 img {
@@ -864,7 +865,7 @@ li {
 
 @media screen and (max-width:700px) {
     .genereltsection .wp-block-group__inner-container {
-        border: 5px solid #0396a6;
+        border: 10px solid #0396a6;
         text-align: left;
         padding: 0;
     }
@@ -934,6 +935,29 @@ ul {
     box-sizing: border-box;
     border: 10px solid #B9D8A9;
     padding: 50px;
+}
+
+@media screen and (max-width:700px) {
+
+    .oekonomi1,
+    .oekonomi2 {
+        border: 4px solid #B9D8A9;
+        padding: 0;
+    }
+
+    #dinoekonomi .text {
+        margin: 0;
+    }
+
+    #dinoekonomi h2,
+    p,
+    li,
+    ul {
+        text-align: justify;
+        text-align-last: left;
+        margin: 0;
+        padding: 0;
+    }
 }
 
 /******** TILMELD SIDE *********/
