@@ -863,8 +863,8 @@ li {
 }
 
 
-.wp-block-buttons {
-    font-size: 60px;
+#hoejskole .wp-block-buttons {
+    font-size: 70px;
     padding: 60px;
     box-sizing: 100px;
     text-align: center;
@@ -890,7 +890,29 @@ li {
 
 
 #dinoekonomi .text {
-    text-align: center;
+    text-align: left;
+
+}
+
+#dinoekonomi p,
+h2 {
+    margin-left: 170px;
+    margin-right: 170px;
+}
+
+#dinoekonomi li,
+ul {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+#dinoekonomi li {
+    /*    list-style-type: none;*/
+}
+
+.oekonomi1 {
+    box-sizing: border-box;
+    border: 2px solid lightblue;
 }
 
 /******** TILMELD SIDE *********/
