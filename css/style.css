@@ -989,14 +989,14 @@ ul {
     font-size: 25px;
 }
 
-.wp-block-columns {
+#tilmeld .wp-block-columns {
     margin-bottom: 40px;
     border: 1px solid black;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.wp-block-columns {
+#tilmeld .wp-block-columns {
     cursor: pointer;
     padding: 12px 18px;
     border: solid 2px;
@@ -1016,7 +1016,7 @@ ul {
     opacity: none;
 }
 
-.wp-block-buttons {
+#tilmeld .wp-block-buttons {
     padding: 20px;
     font-size: 30px;
 }
