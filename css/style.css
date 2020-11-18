@@ -771,11 +771,13 @@ h1 {
 
 
 
+
+
 .genereltsection .wp-block-group__inner-container {
     box-sizing: border-box;
     float: center;
     border: 10px solid #0396a6;
-    text-align: center;
+    /*    text-align: center;*/
     padding: 50px;
 
     margin-top: 20px;
@@ -986,4 +988,46 @@ ul {
 .wp-block-buttons {
     padding: 20px;
     font-size: 30px;
+}
+
+
+/****** FOR GYMNASIER STYLE *******/
+
+#splashgymnasier img {
+    width: 100vw;
+    max-height: 80vh;
+    object-fit: cover;
+    object-position: 0 10%;
+}
+
+#gymnasier .text {
+    text-align: left;
+
+}
+
+#gymnasier p,
+h2 {
+    margin-left: 170px;
+    margin-right: 170px;
+    line-height: 20px;
+    padding: 10px;
+}
+
+.gymnasier1 {
+    box-sizing: border-box;
+    border: 10px solid #0396a6;
+    padding: 50px;
+}
+
+.gymnasier2 {
+    box-sizing: border-box;
+    border: 10px solid #0396a6;
+    padding: 50px;
+    margin-top: 20px;
+}
+
+.gymnasier3 {
+    box-sizing: border-box;
+    border: 10px solid #0396a6;
+    padding: 50px;
 }
