@@ -12,7 +12,8 @@
 body {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    background-color: rgb(226, 226, 226);
+    /*    background-color: rgb(226, 226, 226);*/
+    background-color: white;
     margin: 0;
 }
 
@@ -773,7 +774,7 @@ h1 {
 .genereltsection .wp-block-group__inner-container {
     box-sizing: border-box;
     float: center;
-    border: 10px solid lightblue;
+    border: 10px solid #0396a6;
     text-align: center;
     padding: 50px;
 
@@ -825,7 +826,7 @@ li {
     box-sizing: border-box;
     margin: 10px;
 
-    background-color: lightblue;
+    background-color: #0396a6;
 }
 
 .section2 img {
@@ -839,7 +840,7 @@ li {
 .section3 {
     box-sizing: border-box;
     float: center;
-    border: 10px solid lightblue;
+    border: 10px solid #0396a6;
     text-align: center;
     padding: 50px;
 
@@ -915,13 +916,13 @@ ul {
 
 .oekonomi1 {
     box-sizing: border-box;
-    border: 10px solid lightblue;
+    border: 10px solid #0396a6;
     padding: 50px;
 }
 
 .oekonomi2 {
     box-sizing: border-box;
-    border: 10px solid lightblue;
+    border: 10px solid #0396a6;
     padding: 50px;
 }
 
